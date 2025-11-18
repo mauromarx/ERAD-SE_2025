@@ -19,17 +19,27 @@
     },
     "portsAttributes": {
         "8010": {
+            "label": "ECL Watch - localhost",
+            "onAutoForward": "openBrowser"
+        },
+        "18010": {
             "label": "ECL Watch",
             "onAutoForward": "openBrowser"
         },
         "8002": {
+            "label": "ESP (internal) - localhost",
+            "onAutoForward": "silent"
+        },
+        "18002": {
             "label": "ESP (internal)",
             "onAutoForward": "silent"
         }
     },
     "forwardPorts": [
         8010,
-        8002
+        18010,
+        8002,
+        18002
     ],
     "postCreateCommand": "echo 'Devcontainer created'",
     "postStartCommand": "/usr/local/bin/start-hpcc.sh && /usr/local/bin/install-bundles.sh",
