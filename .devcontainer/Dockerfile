@@ -18,7 +18,7 @@ RUN apt-get update -y \
 COPY ./environment/*.xml /etc/HPCCSystems/
 
 # Expose same ports (Codespaces will map/forward selectively)
-EXPOSE 8010 8002 6000-9999 20000 20002 20100
+EXPOSE 8010 18010 8002 18002 6000-9999 20000 20002 20100
 
 # Provide a helper script to (re)start the platform
 COPY .devcontainer/scripts/start-hpcc.sh /usr/local/bin/start-hpcc.sh
