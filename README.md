@@ -1,6 +1,7 @@
 # Workshop
 
-ECL course material for community workshops. The training cluster utilized during the workshop is: [TrainingCluster](https://eclwatch.br-training-prod.azure.lnrsg.io:18010/). After completing this course, you should use: *localhost* or [PlayGroundCluster](https://play.hpccsystems.com:18010/).
+ECL course material for community workshops. The training cluster utilized during the workshop is: [Training Cluster](https://eclwatch.br-training-prod.azure.lnrsg.io:18010/) and [ESP Server](https://eclqueries.br-training-prod.azure.lnrsg.io:18002/).
+After completing this course, you should use: *localhost* or [PlayGround Cluster](https://play.hpccsystems.com:18010/) and [PlayGround ESP Server](https://play.hpccsystems.com:18002/).
 
 **Note**: The '*persons*' and '*property.csv*' datasets are already sprayed and available in the training cluster utilized during the workshop.
 
@@ -19,7 +20,7 @@ The Codespaces environment will:
 
 * Build a custom container (see `.devcontainer/Dockerfile`) installing HPCC Systems platform 9.14.22-1 version
 * Auto-start the HPCC services (`postStartCommand` runs `start-hpcc.sh` and `install-bundles.sh`)
-* Forward port `8010` (ECL Watch) and `8002` (Roxie) 
+* Forward ports `8010` or `18010` (ECL Watch) and `8002` or `18002` (ESP)
 * Install the VS Code extensions: `hpcc-systems.ecl` and `gordonsmith.observable-js`
 
 ### Codespaces Notes
